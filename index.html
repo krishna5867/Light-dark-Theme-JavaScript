@@ -22,7 +22,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
         cursor: pointer;
     }
     .container{
-        width: 1000px;
+        width: 800px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -72,12 +72,18 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
     @media query,(max-width: 560px){
         .container{
             width: 400px;
-            margin-top: 80px;
+            margin-top: 150px;
             flex-direction: column-reverse;
         }
         .skills .fa-brands{
             height: 50px;
         }
+    }
+    @media query,(max-width: 360px){
+        .container{
+            margin-top: 70px;
+        }
+
     }
 </style>
 <body>
