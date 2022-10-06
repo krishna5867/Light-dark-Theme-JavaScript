@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
+">
+<style>
+    .dark-theme{
+        background: #333;
+        color: #fff;
+    }
+    #icon{
+        position: absolute;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .container{
+        width: 1000px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .container img{
+        border-radius: 50%;
+        width: 280px;
+        height: 280px;
+    }
+    h1{
+        color: blueviolet;
+        margin-bottom: -10px;
+    }
+    .text{
+        padding: 0px 80px;
+    }
+    .fa-solid,.fa-brands{
+        font-size: 30px;
+        margin-left: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: blueviolet;
+        transition: .4s ease-in-out;
+    }
+    .fa-brands:hover{
+        color: #000;
+        transform: scale(1.2);
+    }
+    .fa-solid:hover{
+        color: #000;
+        transform: scale(1.2);
+
+    }
+    ul li a{
+        color: blueviolet;
+        line-height: 25px;
+    }
+    ul li a:hover{
+        color: blue;
+    }
+
+    @media query,(max-width: 560px){
+        .container{
+            width: 400px;
+            margin-top: 100px;
+            flex-direction: column-reverse;
+        }
+        .skills .fa-brands{
+            height: 50px;
+        }
+    }
+</style>
+<body>
+    <img src="moon.png" alt="" id="icon">
+    <br>
+    <div class="container">
+        <div class="text">
+            <h1>I'm KRISHNA</h1>
+            <h3>A FullStack Web Developer</h3>
+            <h3>Find My Works</h3>
+            <ul>
+                <li><a href="https://github.com/krishna5867" class="link">Git Hub</a></li>
+                <li><a href="vercel.com/krishnakumar" class="link">Deployed at Vercel</a></li>
+                <li><a href="findcoder.io/u/krishna5867" class="link">Findcoder</a></li>
+            </ul>
+            <div class="skills">
+                <h3>Skills</h3>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <h3>Let's Connect Together</h3>
+            <a href="https://mail.google.com/mail/u/1/#inbox?compose=new"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/webdevkrishna"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/webdev_07/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="image">
+        <img src="dp-removebg-preview (1).png" alt="">
+        </div>
+    </div>
+    <script>
+        let icon = document.querySelector("#icon");
+        icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "sun.png";
+            icon.classList.remove("dark");
+        }else{
+            icon.src = "moon.png";
+        }
+    }
+    </script>
+</body>
+</html>
